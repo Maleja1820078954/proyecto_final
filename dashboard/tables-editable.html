@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+        <meta name="author" content="Coderthemes">
+
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <title>Adminto - Responsive Admin Dashboard Template</title>
+
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+        <script src="assets/js/modernizr.min.js"></script>
+
+    </head>
+
+
+    <body class="fixed-left">
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Top Bar Start -->
+            <div class="topbar">
+
+                <!-- LOGO -->
+                <div class="topbar-left">
+                  <h1 class="logo"><span>ParkZone<span><i class="mdi mdi-layers"></i></h1>
+                </div>
+
+                <!-- Button mobile view to collapse sidebar menu -->
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="container-fluid">
+
+                        <!-- Page title -->
+                        <ul class="nav navbar-nav list-inline navbar-left">
+                            <li class="list-inline-item">
+                                <button class="button-menu-mobile open-left">
+                                    <i class="mdi mdi-menu"></i>
+                                </button>
+                            </li>
+                            <li class="list-inline-item">
+                                <h4 class="page-title">TABLAS</h4>
+                            </li>
+                        </ul>
+
+                        <nav class="navbar-custom">
+                        </nav>
+                    </div><!-- end container -->
+                </div><!-- end navbar -->
+            </div>
+            <!-- Top Bar End -->
+
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="left side-menu">
+                <div class="sidebar-inner slimscrollleft">
+
+                    <!-- User -->
+                    <div class="user-box">
+                        <div class="user-img">
+                            <img src="assets/img/perfil.jpg" alt="user-img" title="ADMIN" class="rounded-circle img-thumbnail img-responsive">
+                            <div class="user-status offline"><i class="mdi mdi-adjust"></i></div>
+                        </div>
+                        <h5>Admin</h5>
+                    </div>
+                    <!-- End User -->
+
+                   <!--- Sidemenu -->
+                        <div id="sidebar-menu">
+                          <ul>
+                             <li><a href="/Parqueadero/Parqueadero/index.html" > Inicio </li>
+                             <li><a href="#" onclick="showSection('vehiculos')"><i class="mdi mdi-car"></i> <span>Vehículos </span></a></li>
+                             <li><a href="#" onclick="showSection('categoria')"><i class="mdi mdi-car"></i> <span> Categoria Vehículos </span></a></li>
+                             <li><a href="#" onclick="showSection('empleados')"><i class="mdi mdi-format-list-bulleted"></i> <span> Empleados </span></a></li>
+                             <li><a href="#" onclick="showSection('clientes')"><i class="mdi mdi-format-list-bulleted"></i> <span> Clientes </span></a></li>
+                             <li><a href="#" onclick="showSection('medios')"><i class="mdi mdi-cash"></i> <span> Medios de Pago </span></a></li>
+                             <li><a href="#" onclick="showSection('pagos')"><i class="mdi mdi-cash"></i></i> <span> Pagos </span></a></li>
+                             <li><a href="#" onclick="showSection('parqueos')"><i class="mdi mdi-format-list-bulleted"></i> <span> Parqueos </span></a></li>
+                             <li><a href="#" onclick="showSection('comprobantes')"><i class="mdi mdi-cash"></i> <span> Comprobante de Pago </span></a></li>
+                         </ul>
+                        </div>
+
+                
+
+                    <!-- Sidebar -->
+                    <div class="clearfix"></div>
+
+                </div>
+
+            </div>
+            <!-- Left Sidebar End -->
+
+
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="content-page">
+                <!-- Start content -->
+                <div class="content">
+                    <div class="container-fluid">
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="card-box">
+                                    <h2 class="m-t-0 header-title"><b>Parqueadero</b></h2><br>
+                                    <div id="inicio" class="tab-section">
+                                        <h4>Bienvenido</h4>
+                                        <p>Selecciona una opción del menú lateral.</p>
+                                    </div>
+                                    
+                                    <div id="vehiculos" class="tab-section" style="display:none;">
+                                        <h4>Tabla de Vehículos</h4>
+                                        <button class="btn btn-primary mb-3" data-toggle="modal" data-target="#modalVehiculo">Agregar</button>
+                                        <table class="table">
+                                            <thead>
+                                              <tr>
+                                                <th>Placa</th>
+                                                <th>Marca</th>
+                                                <th>Modelo</th>
+                                                <th>Color</th>
+                                                <th>Año</th>
+                                                <th>Categoría</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td>ABC123</td>
+                                                <td>Toyota</td>
+                                                <td>Corolla</td>
+                                                <td>Negro</td>
+                                                <td>2020</td>
+                                                <td>Sedan</td>
+                                              </tr>
+                                              <tr>
+                                                <td>XYZ789</td>
+                                                <td>Honda</td>
+                                                <td>Civic</td>
+                                                <td>Rojo</td>
+                                                <td>2019</td>
+                                                <td>Compacto</td>
+                                              </tr>
+                                              <tr>
+                                                <td>KLM456</td>
+                                                <td>Chevrolet</td>
+                                                <td>Spark</td>
+                                                <td>Azul</td>
+                                                <td>2021</td>
+                                                <td>SUV</td>
+                                              </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    
+                                    <div id="categoria" class="tab-section" style="display:none;">
+                                      <h4>Tabla de Categoría Vehículos</h4>
+                                      <button class="btn btn-primary mb-3" data-toggle="modal" data-target="#modalCategoria">Agregar</button>
+                                      <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th>Placa</th>
+                                            <th>Categoría</th>
+                                            <th>Descripción</th>
+                                            <th>Estado</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>ABC123</td>
+                                            <td>Sedan</td>
+                                            <td>Vehículo familiar de 4 puertas</td>
+                                            <td>Activo</td>
+                                          </tr>
+                                          <tr>
+                                            <td>XYZ789</td>
+                                            <td>Compacto</td>
+                                            <td>Vehículo deportivo utilitario</td>
+                                            <td>Activo</td>
+                                          </tr>
+                                          <tr>
+                                            <td>KLM456</td>
+                                            <td>SUV</td>
+                                            <td>Vehículo pequeño de ciudad</td>
+                                            <td>Inactivo</td>
+                                          </tr>
+                                        </tbody>
+                                        </table>
+                                    </div>
+                                    
+                  
+                                    <div id="empleados" class="tab-section" style="display:none;">
+                                      <h4>Tabla de Empleados</h4>
+                                      <button class="btn btn-primary mb-3" data-toggle="modal" data-target="#modalEmpleado">Agregar</button>
+                                      <table class="table">
+                                          <thead>
+                                            <tr>
+                                              <th>Nombre del empleado</th>
+                                              <th>Cargo</th>
+                                              <th>Funciones principales</th>
+                                              <th>Horario de trabajo</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <td>Juan Pérez</td>
+                                              <td>Administrador General</td>
+                                              <td>Supervisar operaciones, manejo de caja, control de personal, atención al cliente.</td>
+                                              <td>Lunes a sábado, 8am - 6pm</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Laura Ramírez</td>
+                                              <td>Cajera</td>
+                                              <td>Cobro de tarifas, entrega de tiquetes, cierre de caja, atención al usuario.</td>
+                                              <td>Turnos rotativos</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Carlos Gómez</td>
+                                              <td>Vigilante de Entrada</td>
+                                              <td>Control de acceso, revisión de vehículos, seguridad en portón principal.</td>
+                                              <td>Lunes a domingo, 6am - 2pm</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Diana Morales</td>
+                                              <td>Vigilante de Salida</td>
+                                              <td>Supervisar salida de vehículos, registro de tiquetes, control de seguridad.</td>
+                                              <td>Lunes a domingo, 2pm - 10pm</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Andrés Suárez</td>
+                                              <td>Auxiliar de Limpieza</td>
+                                              <td>Aseo general del parqueadero, recolección de basura, mantenimiento básico.</td>
+                                              <td>Lunes a sábado, 7am - 4pm</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Paola Mejía</td>
+                                              <td>Asistente Administrativa</td>
+                                              <td>Apoyo en informes, manejo de inventario, atención telefónica y apoyo logístico.</td>
+                                              <td>Lunes a viernes, 9am - 5pm</td>
+                                            </tr>
+                                          </tbody>
+                                      </table>
+                                    </div>
+                                    <div id="clientes" class="tab-section" style="display:none;">
+                                      <h4>Tabla de Clientes</h4>
+                                      <button class="btn btn-primary mb-3" data-toggle="modal" data-target="#modalCliente">Agregar</button>
+                                      <table class="table">
+                                          <thead>
+                                            <tr>
+                                              <th>Nombre completo</th>
+                                              <th>Cédula/NIT</th>
+                                              <th>Teléfono</th>
+                                              <th>Tipo de vehículo</th>
+                                              <th>Placa</th>
+                                              <th>Fecha registro</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr><td>Laura Sánchez</td>
+                                              <td>12345678</td>
+                                              <td>3001234567</td>
+                                              <td>Carro</td>
+                                              <td>ABC123</td>
+                                              <td>2025-04-21</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Jorge Martínez</td>
+                                              <td>98765432</td>
+                                              <td>3012345678</td>
+                                              <td>Moto</td>
+                                              <td>XYZ456</td>
+                                              <td>2025-04-20</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Mariana López</td>
+                                              <td>56789123</td>
+                                              <td>3123456789</td>
+                                              <td>Carro</td>
+                                              <td>DFS321</td>
+                                              <td>2025-04-18</td>
+                                            </tr>
+                                          </tbody>
+                                      </table>
+                                    </div>
+                                    <div id="medios" class="tab-section" style="display:none;">
+                                        <h4>Tabla de Medios de Pago</h4>
+                                        <button class="btn btn-primary mb-3" data-toggle="modal" data-target="#modalMedios">Agregar</button>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                  <th>ID</th>
+                                                  <th>Medio de pago</th>
+                                                  <th>Descripción</th>
+                                                  <th>Fecha de registro</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                  <td>1</td>
+                                                  <td>Efectivo</td>
+                                                  <td>Pago directo con dinero en mano</td>
+                                                  <td>2025-04-21</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>2</td>
+                                                  <td>Tarjeta de Crédito</td>
+                                                  <td>Pago con tarjeta bancaria</td>
+                                                  <td>2025-04-21</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>3</td>
+                                                  <td>Transferencia Bancaria</td>
+                                                  <td>Pago desde cuenta bancaria</td>
+                                                  <td>2025-04-21</td>
+                                                </tr>
+                                                <tr>
+                                                  <td>4</td>
+                                                  <td>Nequi</td>
+                                                  <td>App de pagos digital</td>
+                                                  <td>2025-04-21</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div id="pagos" class="tab-section" style="display:none;">
+                                      <h4>Tabla de Pagos</h4>
+                                      <button class="btn btn-primary mb-3" data-toggle="modal" data-target="#modalPagos">Agregar</button>
+                                      <table class="table">
+                                          <thead>
+                                            <tr>
+                                              <th>Placa</th>
+                                              <th>Cliente</th>
+                                              <th>Valor pagado</th>
+                                              <th>Fecha de pago</th>
+                                              <th>Medio de pago</th>
+                                              <th>Observaciones</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <td>ABC123</td>
+                                              <td>Juan Pérez</td>
+                                              <td>$500.000</td>
+                                              <td>2025-04-20</td>
+                                              <td>Transferencia</td>
+                                              <td>Abono inicial</td>
+                                            </tr>
+                                            <tr>
+                                              <td>XYZ789</td>
+                                              <td>María Rodríguez</td>
+                                              <td>$300.000</td>
+                                              <td>2025-04-21</td>
+                                              <td>Efectivo</td>
+                                              <td>Pago completo</td>
+                                            </tr>
+                                            <tr>
+                                              <td>DEF456</td>
+                                              <td>Carlos Gómez</td> 
+                                              <td>$250.000</td>
+                                              <td>2025-04-21</td>
+                                              <td>Nequi</td>
+                                              <td>Pago parcial, faltan cuotas</td>
+                                            </tr>
+                                          </tbody>
+                                      </table>
+                                    </div>
+                                    <div id="parqueos" class="tab-section" style="display:none;">
+                                      <h4>Tabla de Parqueos</h4>
+                                      <button class="btn btn-primary mb-3" data-toggle="modal" data-target="#modalParqueos">Agregar</button>
+                                        <table class="table">
+                                          <thead>
+                                            <tr>
+                                              <th>Placa</th>
+                                              <th>Cliente</th>
+                                              <th>Hora de entrada</th>
+                                              <th>Hora de salida</th>
+                                              <th>Ubicación</th>
+                                              <th>Estado</th>
+                                          </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <td>ABC123</td>
+                                              <td>Juan Pérez</td>
+                                              <td>2025-04-21 08:00</td>
+                                              <td>2025-04-21 12:00</td>
+                                              <td>Piso 1 - A12</td>
+                                              <td>Finalizado</td>
+                                            </tr>
+                                            <tr>
+                                              <td>XYZ789</td>
+                                              <td>María Rodríguez</td>
+                                              <td>2025-04-21 09:30</td>
+                                              <td>--</td>
+                                              <td>Piso 2 - B07</td>
+                                              <td>En curso</td>
+                                            </tr>
+                                            <tr>
+                                              <td>DEF456</td>
+                                              <td>Carlos Gómez</td>
+                                              <td>2025-04-21 10:15</td>
+                                              <td>2025-04-21 11:45</td>
+                                              <td>Piso 1 - A03</td>
+                                              <td>Finalizado</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                    </div>
+                                    <div id="comprobantes" class="tab-section" style="display:none;">
+                                        <h4>Tabla de Comprobantes de Pago</h4>
+                                        <button class="btn btn-primary mb-3" data-toggle="modal" data-target="#modalComprobante">Agregar</button>
+                                        <table class="table">
+                                            <thead>
+                                              <tr>
+                                                <th>Placa</th>
+                                                <th>Fecha de pago</th>
+                                                <th>Valor pagado</th>
+                                                <th>Medio de pago</th>
+                                                <th>Autorizado por</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td>001</td>
+                                                <td>1</td>
+                                                <td>ABC123</td>
+                                                <td>2025-04-21</td>
+                                                <td>$20.000</td>
+                                                <td>Transferencia</td>
+                                                <td>Admin01</td>
+                                              </tr>
+                                              <tr>
+                                                <td>002</td>
+                                                <td>3</td>
+                                                <td>DEF456</td>
+                                                <td>2025-04-21</td>
+                                                <td>$15.000</td>
+                                                <td>Efectivo</td>
+                                                <td>Admin02</td>
+                                              </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                    </div> <!-- container -->
+
+                </div> <!-- content -->
+
+                <footer class="footer text-right">
+                    2025 © Parqueadero.com
+                </footer>
+
+            </div>
+
+
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+
+
+        
+
+        </div>
+        <!-- END wrapper -->
+<!-- Modal Vehículos -->
+<div class="modal fade" id="modalVehiculo" tabindex="-1" role="dialog" aria-labelledby="vehiculoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <form id="vehiculoForm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title"><b>Agregar Vehículo</b></h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+                <label>Placa</label>
+                <input type="text" class="form-control" id="marcaVehiculo" required>
+              </div>
+            <div class="form-group">
+              <label>Marca</label>
+              <input type="text" class="form-control" id="marcaVehiculo" required>
+            </div>
+            <div class="form-group">
+              <label>Modelo</label>
+              <input type="text" class="form-control" id="modeloVehiculo" required>
+            </div>
+            <div class="form-group">
+                <label>Color</label>
+                <input type="number" class="form-control" id="anioVehiculo" required>
+              </div>
+            <div class="form-group">
+              <label>Año</label>
+              <input type="number" class="form-control" id="anioVehiculo" required>
+            </div>
+            <div class="form-group">
+              <label>Categoría</label>
+              <input type="text" class="form-control" id="anioVehiculo" required>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Guardar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <!-- Modal Categoria -->
+<div class="modal fade" id="modalCategoria" tabindex="-1" role="dialog" aria-labelledby="vehiculoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <form id="categoriaForm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title"><b>Agregar Categoría de Vehículo</b></h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+                <label>Placa</label>
+                <input type="text" class="form-control" id="idCategoria" required>
+              </div>
+            <div class="form-group">
+              <label>Categoría</label>
+              <input type="text" class="form-control" id="marcaCategoria" required>
+            </div>
+            <div class="form-group">
+              <label>Descripción</label>
+              <input type="text" class="form-control" id="modeloCategoria" required>
+            </div>
+            <div class="form-group">
+                <label>Estado</label>
+                <input type="number" class="form-control" id="anioCategoria" required>
+              </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Guardar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+<!-- Modal Empleados -->
+<div class="modal fade" id="modalEmpleado" tabindex="-1" role="dialog" aria-labelledby="empleadoModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <form id="empleadoForm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Agregar Empleado</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        
+        <div class="modal-body">
+          <div class="form-group">
+            <label>Nombre completo</label>
+            <input type="text" class="form-control" id="nombreEmpleado" required>
+          </div>
+          <div class="form-group">
+            <label>Cédula</label>
+            <input type="number" class="form-control" id="cedulaEmpleado" required>
+          </div>
+          <div class="form-group">
+            <label>Teléfono</label>
+            <input type="number" class="form-control" id="telefonoEmpleado" required>
+          </div>
+          <div class="form-group">
+            <label>Cargo</label>
+            <input type="text" class="form-control" id="cargoEmpleado" required>
+          </div>
+          <div class="form-group">
+            <label>Horario de trabajo</label>
+            <input type="text" class="form-control" id="horarioEmpleado" required>
+          </div>
+          <div class="form-group">
+            <label>Funciones principales</label>
+            <input type="text" class="form-control" id="funcionesEmpleado" required>
+          </div>
+          <div class="form-group">
+            <label>Fecha de ingreso</label>
+            <input type="date" class="form-control" id="fechaIngresoEmpleado" required>
+          </div>
+        </div>
+        
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Guardar</button>
+        </div>
+        
+      </div>
+    </form>
+  </div>
+</div>
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/jquery.nicescroll.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+
+        <script src="assets/plugins/tiny-editable/mindmup-editabletable.js"></script>
+        <script src="assets/plugins/tiny-editable/numeric-input-example.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+
+        <script>
+            $('#mainTable').editableTableWidget().numericInputExample().find('td:first').focus();
+            function showSection(sectionId) {
+                // Oculta todas las secciones
+                const sections = document.querySelectorAll('.tab-section');
+                sections.forEach(section => {
+                    section.style.display = 'none';
+                });
+        
+                // Muestra la sección seleccionada
+                const selected = document.getElementById(sectionId);
+                if (selected) {
+                    selected.style.display = 'block';
+                }
+            }
+        
+            // Mostrar "Inicio" por defecto al cargar
+            document.addEventListener('DOMContentLoaded', () => {
+                showSection('inicio');
+            });
+        </script>
+        
+    </body>
+</html>
