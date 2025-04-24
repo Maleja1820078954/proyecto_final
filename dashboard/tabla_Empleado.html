@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabla Empleado</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+
+  <!-- Contenedor para los dos botones -->
+  <div class="d-flex justify-content-between mb-3">
+    <!-- Botón izquierda -->
+    <a href="tables-editable.html" class="btn btn-primary">Regresar</a>
+
+    <!-- Botón derecha -->
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formModal">Registrar</button>
+  </div>
+  <h2 class="text-center mb-4">Tabla Empleado</h2>
+    <!-- Tabla  Empleado-->
+    <table class="table table-bordered table-striped shadow">
+        <thead class="table-dark">
+          <tr>
+            <th>Nombre del empleado</th>
+            <th>Cargo</th>
+            <th>Funciones principales</th>
+            <th>Horario de trabajo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Juan Pérez</td>
+            <td>Administrador General</td>
+            <td>Supervisar operaciones, manejo de caja, control de personal, atención al cliente.</td>
+            <td>Lunes a sábado, 8am - 6pm</td>
+          </tr>
+          <tr>
+            <td>Laura Ramírez</td>
+            <td>Cajera</td>
+            <td>Cobro de tarifas, entrega de tiquetes, cierre de caja, atención al usuario.</td>
+            <td>Turnos rotativos</td>
+          </tr>
+          <tr>
+            <td>Carlos Gómez</td>
+            <td>Vigilante de Entrada</td>
+            <td>Control de acceso, revisión de vehículos, seguridad en portón principal.</td>
+            <td>Lunes a domingo, 6am - 2pm</td>
+          </tr>
+          <tr>
+            <td>Diana Morales</td>
+            <td>Vigilante de Salida</td>
+            <td>Supervisar salida de vehículos, registro de tiquetes, control de seguridad.</td>
+            <td>Lunes a domingo, 2pm - 10pm</td>
+          </tr>
+          <tr>
+            <td>Andrés Suárez</td>
+            <td>Auxiliar de Limpieza</td>
+            <td>Aseo general del parqueadero, recolección de basura, mantenimiento básico.</td>
+            <td>Lunes a sábado, 7am - 4pm</td>
+          </tr>
+          <tr>
+            <td>Paola Mejía</td>
+            <td>Asistente Administrativa</td>
+            <td>Apoyo en informes, manejo de inventario, atención telefónica y apoyo logístico.</td>
+            <td>Lunes a viernes, 9am - 5pm</td>
+          </tr>
+        </tbody>
+   </table>
+</div>
+
+ 
+<!-- Modal Empleado -->
+<div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+
+  <div class="modal-dialog">
+    <div class="modal-content shadow-lg">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="formModalLabel">Formulario Empleado</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+       
+
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="nom" class="form-label">Nombre del empleado</label>
+            <input type="text" class="form-control" id="nom" placeholder="">
+          </div>
+          <div class="mb-3">
+            <label for="cargo" class="form-label">Cargo</label>
+            <input type="text" class="form-control" id="cargo" placeholder="">
+          </div>
+          <div class="mb-3">
+            <label for="funciones" class="form-label">Funciones principales</label>
+            <input type="text" class="form-control" id="funciones" placeholder="">
+          </div>
+          <div class="mb-3">
+            <label for="horario" class="form-label">Horario de trabajo</label>
+            <input type="text" class="form-control" id="horario" placeholder="">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-success">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Scripts de Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabla Comprobante de pago</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+
+  <!-- Contenedor para los dos botones -->
+  <div class="d-flex justify-content-between mb-3">
+    <!-- Botón izquierda -->
+    <a href="tables-editable.html" class="btn btn-primary">Regresar</a>
+
+    <!-- Botón derecha -->
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formModal">Registrar</button>
+  </div>
+  <h2 class="text-center mb-4">Tabla Comprobante de Pago</h2>
+    <!-- Tabla  Empleado-->
+    <table class="table table-bordered table-striped shadow">
+        <thead class="table-dark">
+          <tr>
+            <th>Placa</th>
+            <th>Fecha de pago</th>
+            <th>Valor pagado</th>
+            <th>Medio de pago</th>
+            <th>Autorizado por</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ABC123</td>
+                <td>2025-04-21</td>
+                <td>$20.000</td>
+                <td>Transferencia</td>
+                <td>Admin01</td>
+            </tr>
+            <tr>
+                <td>DEF456</td>
+                <td>2025-04-21</td>
+                <td>$15.000</td>
+                <td>Efectivo</td>
+                <td>Admin02</td>
+            </tr>
+        </tbody>
+   </table>
+</div>
+
+ 
+<!-- Modal Medio de pago -->
+<div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+
+  <div class="modal-dialog">
+    <div class="modal-content shadow-lg">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="formModalLabel">Formulario Comprobante de Pago</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+       
+
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="placa" class="form-label">Placa</label>
+            <input type="text" class="form-control" id="placa" placeholder="">
+          </div>
+          <div class="mb-3">
+            <label for="fec" class="form-label">Fecha de pago</label>
+            <input type="text" class="form-control" id="fec" placeholder="">
+          </div>
+          <div class="mb-3">
+            <label for="valor" class="form-label">Valor pagado</label>
+            <input type="text" class="form-control" id="valor" placeholder="">
+          </div>
+          <div class="mb-3">
+            <label for="medio" class="form-label">Medio de pago</label>
+            <input type="text" class="form-control" id="medio" placeholder="">
+          </div>
+          <div class="mb-3">
+            <label for="auto" class="form-label">Autorizado por</label>
+            <input type="text" class="form-control" id="auto" placeholder="">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-success">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Scripts de Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+        <meta name="author" content="Coderthemes">
+
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+        <title>Adminto - Responsive Admin Dashboard Template</title>
+
+        <!-- App css -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+        <script src="assets/js/modernizr.min.js"></script>
+
+    </head>
+
+
+    <body class="fixed-left">
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Top Bar Start -->
+            <div class="topbar">
+
+                <!-- LOGO -->
+                <div class="topbar-left">
+                  <h1 class="logo"><span>ParkZone<span><i class="mdi mdi-layers"></i></h1>
+                </div>
+
+                <!-- Button mobile view to collapse sidebar menu -->
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="container-fluid">
+
+                        <!-- Page title -->
+                        <ul class="nav navbar-nav list-inline navbar-left">
+                            <li class="list-inline-item">
+                                <button class="button-menu-mobile open-left">
+                                    <i class="mdi mdi-menu"></i>
+                                </button>
+                            </li>
+                            <li class="list-inline-item">
+                                <h4 class="page-title">TABLAS</h4>
+                            </li>
+                        </ul>
+
+                        <nav class="navbar-custom">
+                        </nav>
+                    </div><!-- end container -->
+                </div><!-- end navbar -->
+            </div>
+            <!-- Top Bar End -->
+
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="left side-menu">
+                <div class="sidebar-inner slimscrollleft">
+
+                    <!-- User -->
+                    <div class="user-box">
+                        <div class="user-img">
+                            <img src="assets/img/perfil.jpg" alt="user-img" title="ADMIN" class="rounded-circle img-thumbnail img-responsive">
+                            <div class="user-status offline"><i class="mdi mdi-adjust"></i></div>
+                        </div>
+                        <h5>Admin</h5>
+                    </div>
+                    <!-- End User -->
+
+                   <!--- Sidemenu -->
+                        <div id="sidebar-menu">
+                          <ul>
+                             <li><a href="/Parqueadero/Parqueadero/index.html" > Inicio </li>
+                             <li><a href="#" onclick="showSection('vehiculos')"><i class="mdi mdi-car"></i> <span>Vehículos </span></a></li>
+                             <li><a href="#" onclick="showSection('categoria')"><i class="mdi mdi-car"></i> <span> Categoria Vehículos </span></a></li>
+                             <li><a href="tabla_Empleado.html" onclick="showSection('empleados')"><i class="mdi mdi-format-list-bulleted"></i> <span> Empleados </span></a></li>
+                             <li><a href="tabla_Cliente.html" onclick="showSection('clientes')"><i class="mdi mdi-format-list-bulleted"></i> <span> Clientes </span></a></li>
+                             <li><a href="tabla_Medio.html" onclick="showSection('medios')"><i class="mdi mdi-cash"></i> <span> Medios de Pago </span></a></li>
+                             <li><a href="tabla_Pago.html" onclick="showSection('pagos')"><i class="mdi mdi-cash"></i></i> <span> Pagos </span></a></li>
+                             <li><a href="tabla_Parqueo.html" onclick="showSection('parqueos')"><i class="mdi mdi-format-list-bulleted"></i> <span> Parqueos </span></a></li>
+                             <li><a href="tabla_Comprobante.html" onclick="showSection('comprobantes')"><i class="mdi mdi-cash"></i> <span> Comprobante de Pago </span></a></li>
+                         </ul>
+                        </div>
+
+                
+
+                    <!-- Sidebar -->
+                    <div class="clearfix"></div>
+
+                </div>
+
+            </div>
+            <!-- Left Sidebar End -->
+
+
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="content-page">
+                <!-- Start content -->
+                <div class="content">
+                    <div class="container-fluid">
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="card-box">
+                                    <h2 class="m-t-0 header-title"><b>Parqueadero</b></h2><br>
+                                    <div id="inicio" class="tab-section">
+                                        <h4>Bienvenido</h4>
+                                        <p>Selecciona una opción del menú lateral.</p>
+                                    </div>
+                                    
+                                    <div id="vehiculos" class="tab-section" style="display:none;">
+                                        <h4>Tabla de Vehículos</h4>
+                                        <button class="btn btn-primary mb-3" data-toggle="modal" data-target="#modalVehiculo">Agregar</button>
+                                        <table class="table">
+                                            <thead>
+                                              <tr>
+                                                <th>Placa</th>
+                                                <th>Marca</th>
+                                                <th>Modelo</th>
+                                                <th>Color</th>
+                                                <th>Año</th>
+                                                <th>Categoría</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td>ABC123</td>
+                                                <td>Toyota</td>
+                                                <td>Corolla</td>
+                                                <td>Negro</td>
+                                                <td>2020</td>
+                                                <td>Sedan</td>
+                                              </tr>
+                                              <tr>
+                                                <td>XYZ789</td>
+                                                <td>Honda</td>
+                                                <td>Civic</td>
+                                                <td>Rojo</td>
+                                                <td>2019</td>
+                                                <td>Compacto</td>
+                                              </tr>
+                                              <tr>
+                                                <td>KLM456</td>
+                                                <td>Chevrolet</td>
+                                                <td>Spark</td>
+                                                <td>Azul</td>
+                                                <td>2021</td>
+                                                <td>SUV</td>
+                                              </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    
+                                    <div id="categoria" class="tab-section" style="display:none;">
+                                      <h4>Tabla de Categoría Vehículos</h4>
+                                      <button class="btn btn-primary mb-3" data-toggle="modal" data-target="#modalCategoria">Agregar</button>
+                                      <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th>Placa</th>
+                                            <th>Categoría</th>
+                                            <th>Descripción</th>
+                                            <th>Estado</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>ABC123</td>
+                                            <td>Sedan</td>
+                                            <td>Vehículo familiar de 4 puertas</td>
+                                            <td>Activo</td>
+                                          </tr>
+                                          <tr>
+                                            <td>XYZ789</td>
+                                            <td>Compacto</td>
+                                            <td>Vehículo deportivo utilitario</td>
+                                            <td>Activo</td>
+                                          </tr>
+                                          <tr>
+                                            <td>KLM456</td>
+                                            <td>SUV</td>
+                                            <td>Vehículo pequeño de ciudad</td>
+                                            <td>Inactivo</td>
+                                          </tr>
+                                        </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end row -->
+
+                    </div> <!-- container -->
+
+                </div> <!-- content -->
+
+                <footer class="footer text-right">
+                    2025 © Parqueadero.com
+                </footer>
+
+            </div>
+
+
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+
+
+        
+
+        </div>
+        <!-- END wrapper -->
+<!-- Modal Vehículos -->
+<div class="modal fade" id="modalVehiculo" tabindex="-1" role="dialog" aria-labelledby="vehiculoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <form id="vehiculoForm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title"><b>Agregar Vehículo</b></h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+                <label>Placa</label>
+                <input type="text" class="form-control" id="marcaVehiculo" required>
+              </div>
+            <div class="form-group">
+              <label>Marca</label>
+              <input type="text" class="form-control" id="marcaVehiculo" required>
+            </div>
+            <div class="form-group">
+              <label>Modelo</label>
+              <input type="text" class="form-control" id="modeloVehiculo" required>
+            </div>
+            <div class="form-group">
+                <label>Color</label>
+                <input type="number" class="form-control" id="anioVehiculo" required>
+              </div>
+            <div class="form-group">
+              <label>Año</label>
+              <input type="number" class="form-control" id="anioVehiculo" required>
+            </div>
+            <div class="form-group">
+              <label>Categoría</label>
+              <input type="text" class="form-control" id="anioVehiculo" required>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Guardar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <!-- Modal Categoria -->
+<div class="modal fade" id="modalCategoria" tabindex="-1" role="dialog" aria-labelledby="vehiculoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <form id="categoriaForm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title"><b>Agregar Categoría de Vehículo</b></h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+                <label>Placa</label>
+                <input type="text" class="form-control" id="idCategoria" required>
+              </div>
+            <div class="form-group">
+              <label>Categoría</label>
+              <input type="text" class="form-control" id="marcaCategoria" required>
+            </div>
+            <div class="form-group">
+              <label>Descripción</label>
+              <input type="text" class="form-control" id="modeloCategoria" required>
+            </div>
+            <div class="form-group">
+                <label>Estado</label>
+                <input type="number" class="form-control" id="anioCategoria" required>
+              </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Guardar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+<!-- Botón para abrir modal (ejemplo) -->
+
+
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/jquery.nicescroll.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+
+        <script src="assets/plugins/tiny-editable/mindmup-editabletable.js"></script>
+        <script src="assets/plugins/tiny-editable/numeric-input-example.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+
+        <script>
+            $('#mainTable').editableTableWidget().numericInputExample().find('td:first').focus();
+            function showSection(sectionId) {
+                // Oculta todas las secciones
+                const sections = document.querySelectorAll('.tab-section');
+                sections.forEach(section => {
+                    section.style.display = 'none';
+                });
+        
+                // Muestra la sección seleccionada
+                const selected = document.getElementById(sectionId);
+                if (selected) {
+                    selected.style.display = 'block';
+                }
+            }
+        
+            // Mostrar "Inicio" por defecto al cargar
+            document.addEventListener('DOMContentLoaded', () => {
+                showSection('inicio');
+            });
+        </script>
+        
+    </body>
+</html>
